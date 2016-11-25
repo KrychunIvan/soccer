@@ -1,4 +1,4 @@
-package com.test.confiig;
+package com.test.config;
 
 
 import com.zaxxer.hikari.HikariConfig;
@@ -38,6 +38,7 @@ public class JpaConfig implements TransactionManagementConfigurer {
 
     @Bean
     public HikariDataSource configureDataSource() {
+        System.out.println(driver);
         HikariConfig config = new HikariConfig();
         config.setDriverClassName(driver);
         config.setJdbcUrl(url);
