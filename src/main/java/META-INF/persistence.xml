@@ -5,8 +5,8 @@
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
         <class>com.test.model.TeamsEntity</class>
         <properties>
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/soccerdb"/>
-            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://ec2-54-217-213-156.eu-west-1.compute.amazonaws.com:5432/d3h4emi1u049jp"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
             <property name="hibernate.connection.username"/>
             <property name="hibernate.connection.password"/>
             <property name="hibernate.archive.autodetection" value="class"/>

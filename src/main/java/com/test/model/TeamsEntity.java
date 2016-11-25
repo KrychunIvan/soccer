@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name = "teams", schema = "soccerdb")
+@Table(name = "teams", schema = "public", catalog = "d3h4emi1u049jp")
 public class TeamsEntity {
     private Long id;
     private String team;
