@@ -1,10 +1,8 @@
 package com.test.api;
 
 import com.test.model.TeamsEntity;
-import com.test.service.TeamsService;
+import com.test.service.teams.TeamsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,4 @@
-package com.test.service.repository;
+package com.test.service.teams.repository;
 
 import com.test.model.TeamsEntity;
 import org.springframework.data.jpa.repository.JpaRepository;

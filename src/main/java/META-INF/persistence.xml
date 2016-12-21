@@ -4,6 +4,10 @@
     <persistence-unit name="NewPersistenceUnit">
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
         <class>com.test.model.TeamsEntity</class>
+        <class>com.test.model.CountryEntity</class>
+        <class>com.test.model.LeaguesEntity</class>
+        <class>com.test.model.LeaguesAndMatchesConnectionsEntity</class>
+        <class>com.test.model.MatchesEntity</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:postgresql://ec2-54-217-213-156.eu-west-1.compute.amazonaws.com:5432/d3h4emi1u049jp"/>
             <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>

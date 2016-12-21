@@ -1,4 +1,4 @@
-package com.test.service;
+package com.test.service.teams;
 
 
 import com.test.model.TeamsEntity;

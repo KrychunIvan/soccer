@@ -1,7 +1,7 @@
-package com.test.service;
+package com.test.service.teams;
 
 import com.test.model.TeamsEntity;
-import com.test.service.repository.TeamsRepository;
+import com.test.service.teams.repository.TeamsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -49,7 +49,7 @@ public class TeamsServiceImpl implements TeamsService {
             readOnly = false)
     public TeamsEntity create(TeamsEntity teamsEntity) {
         if (teamsEntity.getId() != null){
-            //Cannot create Greeting with specified ID value
+            //Cannot create Team with specified ID value
             return null;
         }
         TeamsEntity savedTeamsEntity = teamsRepository.save(teamsEntity);
@@ -63,7 +63,7 @@ public class TeamsServiceImpl implements TeamsService {
     public TeamsEntity update(TeamsEntity teamsEntity) {
         TeamsEntity teamsEntityPersisted = findOne(teamsEntity.getId());
         if (teamsEntityPersisted == null){
-            //Cannot update Greeting that hasn't been persisted
+            //Cannot update Team that hasn't been persisted
             return null;
         }
 
